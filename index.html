@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,6 +14,11 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
   <style>
+
+  img.first-slide { -webkit-filter: brightness(95%);}
+  img.second-slide { -webkit-filter: brightness(85%);}
+  img.third-slide { -webkit-filter: brightness(75%);}
+
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 30%;
@@ -24,7 +28,7 @@
   </head>
   <body>
   		<!--- Navigation bar -->
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
  	<div class="container-fluid">
     <div class="navbar-header">
     <a class="navbar-brand" href="#">Koality</a>
@@ -67,7 +71,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Koality</h1>
-              <p>Help make our services better!</p>
+              <p class><b>Help make our services better!</b></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
@@ -77,17 +81,21 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Make a study group!</h1>
-              <p>Get more work done with friends close and far away.</p>
+              <p><b>Get more work done with friends close and far away.</b></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
+
+
+
         <div class="item">
           <img class="third-slide" src="http://listerart.com.au/wp-content/uploads/2015/06/Productivity1.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Productivity at its finest.</h1>
-              <p>With our api you can create and upload documents with office 365, save them to your onedrive, and share them instantaneously with others!</p>
+              <p class="pic3"><b>With our api you can create and upload documents with office 365,</b></p>
+              <p class ="pic32"><b> save them to your onedrive, and share them instantaneously with others!</b></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
