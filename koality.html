@@ -15,6 +15,11 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   
   <style>
+
+  img.first-slide { -webkit-filter: brightness(95%);}
+  img.second-slide { -webkit-filter: brightness(85%);}
+  img.third-slide { -webkit-filter: brightness(75%);}
+
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 30%;
@@ -24,34 +29,51 @@
   </head>
   <body>
   		<!--- Navigation bar -->
-	<nav class="navbar navbar-inverse">
- 	<div class="container-fluid">
+  <!--- Dashboard-->
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
     <div class="navbar-header">
-    <a class="navbar-brand" href="#">Koality</a>
-    </div>
-    <!--- Buttons for the nav bar -->
-    <div id="navbar" class="navbar-collapse collapse">
+      </div>
 
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-    		</div>        
-    		<div class="form-group">
-            	<input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-    <!--- Drop down buttons for the navigation bar uptop -->
-    <div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="userpage.html">Page 1</a></li>
-        <li><a href="#">Page 2</a></li> 
-        <li><a href="#">Page 3</a></li> 
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <ul class="nav navbar-nav navbar-left">
+        <li class = "dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-list-alt"> Contacts</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-book"> Calendar</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-inbox"> Messages</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"> Invites</a></li>
+            <li><a href="#">Get <span class="glyphicon glyphicon-leaf">Bits</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-circle-arrow-up"> Upgrade</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-edit"> Request an answer</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-cog"> Settings</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-transfer"> Help and Feedback</a></li>
+          </ul>
+        </li>
+        <li><a href="koality.html">Koality</a></li>
+        <li><a href="#">News Feed</a></li>
       </ul>
+
+
+
+        <!-- Nav Bar and Buttons for the nav bar **
+    <div id="navbar" class="navbar-collapse collapse">
+    ** Drop down buttons for the navigation bar uptop
+    <div>-->
+      
+       <ul class="nav navbar-nav navbar-right">
+          <li><a href="koality.html">Home</a></li>
+           <li><a href="#"><span class="glyphicon glyphicon-leaf">Bits</span></a></li>
+           <li><a href="#"><span class="glyphicon glyphicon-search"> Search</span></a></li>
+           <li><a href="#"><span class="glyphicon glyphicon-bell"> Notifications</a></li> 
+           <li><a href="userpage.html"><span class="glyphicon glyphicon-user"> Profile</span></a></li>  
+         </ul>      
     </div>
-  	</div>
-	</nav>
+    </div>
+  </nav>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -67,7 +89,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Koality</h1>
-              <p>Help make our services better!</p>
+              <p class><b>Help make our services better!</b></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
@@ -77,17 +99,21 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Make a study group!</h1>
-              <p>Get more work done with friends close and far away.</p>
+              <p><b>Get more work done with friends close and far away.</b></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
+
+
+
         <div class="item">
           <img class="third-slide" src="http://listerart.com.au/wp-content/uploads/2015/06/Productivity1.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Productivity at its finest.</h1>
-              <p>With our api you can create and upload documents with office 365, save them to your onedrive, and share them instantaneously with others!</p>
+              <p class="pic3"><b>With our api you can create and upload documents with office 365,</b></p>
+              <p class ="pic32"><b> save them to your onedrive, and share them instantaneously with others!</b></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
